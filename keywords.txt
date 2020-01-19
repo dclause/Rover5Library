@@ -1,0 +1,41 @@
+#######################################
+# Syntax Coloring Map for Rover5Library
+# by Dominique CLAUSE
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+Rover5		KEYWORD1
+Rover5Motor	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+setDirection		KEYWORD2
+setSpeed			KEYWORD2
+stop				KEYWORD2
+getCurrent			KEYWORD2
+getDistance			KEYWORD2
+getSpeed			KEYWORD2
+moveForward			KEYWORD2
+moveBackward		KEYWORD2
+turnLeft			KEYWORD2
+turnRight			KEYWORD2
+getNbreMotors		KEYWORD2
+isMoving			KEYWORD2
+getMotorLeft		KEYWORD2
+getMotorRight		KEYWORD2
+getMotorLeftFront	KEYWORD2
+getMotorRightFront	KEYWORD2
+getMotorLeftRear	KEYWORD2
+getMotorRightRear	KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+
+ROVER5_MOTOR_DIRECTION_FORWARD	LITERAL1
+ROVER5_MOTOR_DIRECTION_BACKWARD	LITERAL1
