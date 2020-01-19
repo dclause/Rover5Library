@@ -27,12 +27,12 @@ public:
 	int getNbreMotors();
 	bool isMoving();
 	
-	Rover5Motor getMotorLeft();
-	Rover5Motor getMotorRight();
-	Rover5Motor getMotorLeftFront();
-	Rover5Motor getMotorRightFront();
-	Rover5Motor getMotorLeftRear();
-	Rover5Motor getMotorRightRear();
+	Rover5Motor& getMotorLeft();
+	Rover5Motor& getMotorRight();
+	Rover5Motor& getMotorLeftFront();
+	Rover5Motor& getMotorRightFront();
+	Rover5Motor& getMotorLeftRear();
+	Rover5Motor& getMotorRightRear();
 
 private:  
 	Rover5Motor _motor1;

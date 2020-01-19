@@ -13,6 +13,8 @@ Created: 19/01/2020
 Rover5::Rover5(int left_pwmPin, int right_pwnPin, int left_dirPin, int right_dirPin, int left_currPin, int right_currPin):
 	_motor1(left_pwmPin, left_dirPin, left_currPin),
 	_motor2(right_pwnPin, right_dirPin, right_currPin),
+	_motor3(0, 0, 0),
+	_motor4(0, 0, 0),
 	_nMotors(2),
 	_isMoving(false)
 {
@@ -125,34 +127,34 @@ bool Rover5::isMoving()
 	return _isMoving;
 }
 
-Rover5Motor Rover5::getMotorLeft()
+Rover5Motor& Rover5::getMotorLeft()
 {
 	return _motor1;
 }
 
-Rover5Motor Rover5::getMotorRight()
+Rover5Motor& Rover5::getMotorRight()
 {
 	return _motor2;
 }
 
 
-Rover5Motor Rover5::getMotorLeftFront()
+Rover5Motor& Rover5::getMotorLeftFront()
 {
 	return _motor1;
 }
 
-Rover5Motor Rover5::getMotorRightFront()
+Rover5Motor& Rover5::getMotorRightFront()
 {
 	return _motor2;
 }
 
 
-Rover5Motor Rover5::getMotorLeftRear()
+Rover5Motor& Rover5::getMotorLeftRear()
 {
 	return _motor3;
 }
 
-Rover5Motor Rover5::getMotorRightRear()
+Rover5Motor& Rover5::getMotorRightRear()
 {
 	return _motor4;
 }
